@@ -2,6 +2,10 @@
 
 ## Unreleased source preview
 
+- Merchant 8.0.0 Marketplace client: 45 project-scoped routes, exact monetary
+  validation, explicit persisted write keys, payout safety guide and signed-event examples.
+- Marketplace contract and prepared route tests added; Swift/Apple execution still pending.
+
 - Initial Swift Package Manager source for Xcode, targeting iOS 15+ and macOS 12+ with Swift 5.9+.
 - Async merchant client, 55 separately authenticated Operator routes and token-only invitation onboarding.
 - Typed invoice creation, exact decimal strings, lossless JSON and lazy validated invoice pagination.

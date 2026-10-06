@@ -10,6 +10,17 @@ third-party dependencies. Includes merchant, Operator and invitation clients.
 Apple-platform tests have not run yet. There is no tagged stable release.
 Build and test in Xcode before using this preview; do not assume production readiness.
 
+
+## Marketplace · merchant 8.0.0+
+
+Use the separate `MarketplaceClient` and a project-scoped `wc_marketplace_...` key
+for vendors, split invoices, protected balances, payout plans and signed events.
+BTC and supported EVM assets only. Keep spending keys on a trusted backend, never
+in customer JavaScript or a shipped mobile app. Writes require a saved retry key;
+preparing a payout does not authorize sending it.
+
+[Setup and safety](docs/marketplace-api.md) · [Invoice and payout example](Examples/Marketplace.swift) ·
+[Signed event receiver](Examples/MarketplaceWebhook.swift) · [All endpoints](https://www.whollycrypto.com/api/#marketplace)
 ## Install in Xcode
 
 Choose **File → Add Package Dependencies**, paste this repository URL and select
